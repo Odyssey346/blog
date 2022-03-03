@@ -2,6 +2,8 @@ import mdsvexConfig from './mdsvex.config.js';
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
+const dev = process.env.NODE_ENV === 'development';
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,6 +18,12 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		paths: {
+			base: dev ? '' : '/blog',
+		},
+		// If you are not using a .nojekyll file, change your appDir to something not starting with an underscore.
+		// For example, instead of '_app', use 'app_', 'internal', etc.
+		appDir: 'app_',
 	}
 };
 
