@@ -11,7 +11,6 @@
 
 <div class="container">
     <div class="card">
-        <a href="/">Back to main page where all the posts are.</a>
         <h1>Post details</h1>
         <span>Title:</span> { title }
         <br /><br />
@@ -23,6 +22,7 @@
     </div>
 
     <div class="mdsvex_content">
+        <a href="/">Back to main page where all the posts are.</a>
         <slot></slot>
     </div>
 </div>
