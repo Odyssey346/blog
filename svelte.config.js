@@ -12,7 +12,7 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [mdsvex({
 		extensions: ['.svx', '.md'],
-		layout: "./src/lib/DescCard.svelte"
+		layout: "./src/lib/InfoCard.svelte"
 	})],
 
 	kit: {
