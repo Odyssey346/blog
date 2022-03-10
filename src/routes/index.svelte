@@ -29,13 +29,13 @@
 		return comparison * -1;
 	}
 	posts.sort(sortByDate);
-	import IndexCard from "$lib/IndexCard.svelte";
+	import WelcomeCard from "$lib/WelcomeCard.svelte";
 </script>
 
 
-<div class="flexContainerIndex">
+<div class="container">
 	<div class="postarea">
-		<h1 style="color: white;">Posts</h1>
+		<h1>Posts</h1>
 		{#each posts as { slug, title, description, uploadedon }}
  	       <a href="posts/{slug}">
  	         {title} - {description} - uploaded {uploadedon}
@@ -44,5 +44,14 @@
 		{/each}
 	</div>
 
-	<IndexCard />
+	<WelcomeCard />
 </div>
+
+<style>
+	h1 {
+		color: white;
+	}
+	.postarea {
+		margin-right: 16px;
+	}
+</style> 

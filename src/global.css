@@ -3,7 +3,7 @@
 body {
     background-color: #222222;
     font-family: 'Comfortaa', sans-serif;
-    font-size: 16px;
+    margin: 1em;
 }
 
 a {
@@ -19,58 +19,40 @@ a:visited {
     color: #c02d2d;
 }
 
-.DescCard {
-        position: absolute;
-        margin-top: 5%;
-        left: 80%;
-        background-color: #7FFFD4;
-        border-radius: 8px;
-        width: 20em;
-        height: 13em;
-        padding: 16px;
-        text-overflow: ellipsis;
-        word-wrap: break-word;
-}
-#h1WithoutMargin {
-        margin: 0 auto;
-        padding: 0;
-}
-
-.mdsvex_content, .postarea {
-        color: white;
-        position: absolute;
-        width: 50%;
-        left: 2%;
-        margin-top: 5%;
-}
-
-.flexContainerIndex {
-    display: flex;
-    justify-content: space-around;
-}
-
 @media only screen and (max-width: 600px) {
-    .flexContainerIndex {
-        flex-direction: column;
-        align-items: center;
-    }
-    .DescCard {
-        position: initial;
-        width: 25vh;
-        height: 20vh;
-    }
-
-    .mdsvex_content, .postarea {
-        padding: 0 0;
-        width: initial;
-        position: initial;
-        margin-top: 10px;
-        left: initial;
-        font-size: 2vh;
-    }
-
     body {
         font-size: calc(9px + 1vmin);
         text-align: left;
+    }
+}
+
+
+
+/*CARD CSS*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5vh;
+
+}
+
+.card {
+    background: #7FFFD4;
+    border-radius: 8px;
+    padding: 16px;
+    word-wrap: break-word;
+    text-overflow: ellipsis;	
+    width: 20em;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        margin-top: 5vh;
     }
 }
