@@ -18,9 +18,9 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		//paths: {
-		//	base: '/blog',
-		//},
+		paths: {
+			base: '/blog',
+		},
 	}
 };
 
