@@ -12,4 +12,4 @@ uploadedon: 2.03.2021
 
 I finally did it. I made my blog. I'm happy now.
 
-I still have a lot to work on. In the mean time, check out the GitHub <a href="https://github.com/Odyssey346/blog">repository.</a>
+I still have a lot to work on. In the mean time, check out the GitHub <a href="https://github.com/Odyssey346/blog">repository</a>.
