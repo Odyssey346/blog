@@ -37,7 +37,7 @@
 	<div class="postarea">
 		<h1>Posts</h1>
 		{#each posts as { slug, title, description, uploadedon }}
- 	       <a href="./posts/{slug}">
+ 	       <a href="/blog/posts/{slug}">
  	         {title} - {description} - uploaded {uploadedon}
  	         <br>
  	       </a>

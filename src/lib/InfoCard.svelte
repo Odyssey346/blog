@@ -22,7 +22,7 @@
     </div>
 
     <div class="mdsvex_content">
-        <a href="../../">Back to main page where all the posts are.</a>
+        <a href="/blog/">Back to main page where all the posts are.</a>
         <slot></slot>
     </div>
 </div>
