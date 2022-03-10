@@ -16,10 +16,7 @@ const config = {
 	})],
 
 	kit: {
-		adapter: adapter(),
-		paths: {
-			base: '/blog'
-		}
+		adapter: adapter()
 	}
 };
 
