@@ -22,7 +22,7 @@
 		{tags}
 		<br /><br />
 		<span>Uploaded on:</span>
-		{uploadedOn}
+		{uploadedon}
 	</div>
 
 	<div class="mdsvex_content">
