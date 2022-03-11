@@ -1,58 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 body {
-    background-color: #222222;
-    font-family: 'Comfortaa', sans-serif;
-    margin: 1em;
+	background-color: #222222;
+	font-family: "Comfortaa", sans-serif;
+	margin: 1em;
 }
 
 a {
-    text-decoration: none;
-    color: #d40e0e;
+	text-decoration: none;
+	color: #d40e0e;
 }
 
 a:hover {
-    color: #f14e4e;
+	color: #f14e4e;
 }
 
 a:visited {
-    color: #c02d2d;
+	color: #c02d2d;
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: calc(9px + 1vmin);
-        text-align: left;
-    }
+	body {
+		font-size: calc(9px + 1vmin);
+		text-align: left;
+	}
 }
-
-
 
 /*CARD CSS*/
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 5vh;
-
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 5vh;
 }
 
 .card {
-    background: #7FFFD4;
-    border-radius: 8px;
-    padding: 16px;
-    word-wrap: break-word;
-    text-overflow: ellipsis;	
-    width: 20em;
+	background: #7fffd4;
+	border-radius: 8px;
+	padding: 16px;
+	word-wrap: break-word;
+	text-overflow: ellipsis;
+	width: 20em;
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
-        justify-content: center;
-    }
+	.container {
+		flex-direction: column;
+		justify-content: center;
+	}
 
-    .card {
-        margin-top: 5vh;
-    }
+	.card {
+		margin-top: 5vh;
+	}
 }
