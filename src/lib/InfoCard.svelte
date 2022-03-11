@@ -2,7 +2,7 @@
 	export let title;
 	export let description;
 	export let tags;
-	export let uploadedOn;
+	export let uploadedon;
 </script>
 
 <svelte:head>
