@@ -1,6 +1,6 @@
 <!-- totally didn't steal all of this from Akis -->
 <script context="module">
-    const posts = import.meta.glob("./posts/*.md");
+	const posts = import.meta.glob("./posts/*.md");
 	let body = [];
 	for (const path in posts) {
 		body.push(posts[path]().then(({ metadata }) => metadata));
@@ -29,20 +29,28 @@
 		return comparison * -1;
 	}
 	posts.sort(sortByDate);
-	import IndexCard from "$lib/IndexCard.svelte";
+	import WelcomeCard from "$lib/WelcomeCard.svelte";
 </script>
 
-
-<div class="flexContainerIndex">
+<div class="container">
 	<div class="postarea">
-		<h1 style="color: white;">Posts</h1>
+		<h1>Posts</h1>
 		{#each posts as { slug, title, description, uploadedon }}
- 	       <a href="posts/{slug}">
- 	         {title} - {description} - uploaded {uploadedon}
- 	         <br>
- 	       </a>
+			<a href="/blog/posts/{slug}">
+				{title} - {description} - uploaded {uploadedon}
+				<br />
+			</a>
 		{/each}
 	</div>
 
-	<IndexCard />
+	<WelcomeCard />
 </div>
+
+<style>
+	h1 {
+		color: white;
+	}
+	.postarea {
+		margin-right: 16px;
+	}
+</style>
