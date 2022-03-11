@@ -38,7 +38,6 @@
 	}
 	.mdsvex_content {
 		color: white;
-		margin-right: 16px;
 	}
 	span {
 		font-weight: bold;
@@ -47,6 +46,7 @@
 		.container {
 			flex-direction: column;
 			justify-content: center;
+			align-items: center;
 		}
 		.card {
 			margin-bottom: 5vh;
