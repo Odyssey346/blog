@@ -2,7 +2,9 @@
 	import "../global.css";
 </script>
 
-<title>Odyssey's Blog</title>
+<svelte:head>
+	<title>Odyssey's Blog</title>
+</svelte:head>
 
 <main>
 	<slot />
