@@ -3,7 +3,12 @@
 	export let description;
 	export let tags;
 	export let uploadedon;
+	import SvelteSeo from 'svelte-seo';
 </script>
+
+<SvelteSeo {title} {description}/>
+
+
 
 <svelte:head>
 	<title>{title} | Odyssey's blog</title>
@@ -26,7 +31,7 @@
 	</div>
 
 	<div class="mdsvex_content">
-		<a href="/blog/">Back to main page where all the posts are.</a>
+		<a href="/blog/">Click me to go the main page.</a>
 		<slot />
 	</div>
 </div>

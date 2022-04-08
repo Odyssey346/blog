@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
+:root {
+	--a-colour: #15cf1e;
+	--a-hover-colour: #48ff00;
+	--a-visited-colour: var(--a-colour);
+	--constrast-a-colour: #1d241d;
+}
+
 body {
 	background-color: #222222;
 	font-family: "Comfortaa", sans-serif;
@@ -8,15 +15,15 @@ body {
 
 a {
 	text-decoration: none;
-	color: #d40e0e;
+	color: var(--a-colour);
 }
 
 a:hover {
-	color: #f14e4e;
+	color: var(--a-hover-colour);
 }
 
 a:visited {
-	color: #c02d2d;
+	color: var(--a-visited-colour);
 }
 
 @media only screen and (max-width: 600px) {
@@ -41,8 +48,45 @@ a:visited {
 	text-overflow: ellipsis;
 	width: 20em;
 	height: fit-content;
+	text-shadow: none;
 }
 
+.card > a {
+	color: var(--constrast-a-colour);
+	font-weight: 700;
+}
+
+.shimage {
+	width: 30%;
+	max-width: 50%;
+	height: auto;
+}
+
+#sveltekitmdsvex {
+	font-weight: 500;
+}
+
+/*
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+}
+*/
 @media only screen and (max-width: 600px) {
 	.container {
 		flex-direction: column;
@@ -50,6 +94,14 @@ a:visited {
 		align-items: center;
 	}
 
+	.video-container iframe {
+		width: 100%;
+		height: 100%;
+	}
+	.shimage {
+		width: 100%;
+		max-width: 100%;
+	}
 	.card {
 		margin-top: 5vh;
 	}
