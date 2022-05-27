@@ -1,3 +1,7 @@
+# Archived because [I made my site have both a blog and be a normal site](https://Odyssey346.github.io)
+
+---
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
